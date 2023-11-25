@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react'
+import Popular from './components/Popular'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import AnimeItem from './components/AnimeItem'
+import Homepage from './components/Homepage'
+import Gallery from './components/Gallery'
 
-function App() {
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/anime/:id' element={<AnimeItem />} />
+        <Route path='/character/:id' element={<Gallery />} />
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App
