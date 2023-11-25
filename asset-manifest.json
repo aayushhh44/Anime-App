@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Anime-App/static/css/main.f5606eb2.css",
+    "main.js": "/Anime-App/static/js/main.19bdb9ea.js",
+    "index.html": "/Anime-App/index.html",
+    "main.f5606eb2.css.map": "/Anime-App/static/css/main.f5606eb2.css.map",
+    "main.19bdb9ea.js.map": "/Anime-App/static/js/main.19bdb9ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5606eb2.css",
+    "static/js/main.19bdb9ea.js"
+  ]
+}
